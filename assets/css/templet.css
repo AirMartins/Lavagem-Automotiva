@@ -1,0 +1,110 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display:flex;
+    justify-content: center;
+    height: 120px;
+
+}
+.container{/*cabeçalho*/
+    display: flex;/* as duas "div" na mesma linha*/
+    justify-content: space-between; /*distribui as divs uma em cada canto da tela*/
+    width: 990px;    
+    margin-top: 10px;
+
+}
+.logomarca{
+    display: flex;
+    align-items: center; /*alinha o logotipo centralizando*/
+    margin-bottom: 7px;
+
+
+}
+.menu{
+    display: flex;
+    align-items: center;
+   
+
+}
+nav ul,
+nav li{
+    margin: 0;
+    padding: 0%;
+    list-style: none;/*retira o ponto da lista*/    
+}
+nav ul{
+    display: flex;/*lado a lado*/
+    
+}
+nav a{
+    display: block;/*espaçamento em bloco*/
+    padding: 15px;
+    text-decoration: none;/*retira sublinhado*/
+    text-transform: uppercase;/*todo texto do menu em Maiúscula*/
+    color: #727272;
+    font-family: Arial;
+}
+
+nav a:hover{
+    background-color: #39aae1;
+    color: white;
+
+}
+#banner{
+    background-image: url(../imagens/Bannercentral.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 670px;/*sem esta altura "falsa" não se consegue ver a imagem*/
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+   justify-content:end;
+   height: 450px;
+   
+}
+.contato{
+    display: flex;
+    flex-direction: ;
+   align-items: flex-end;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.field{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1 solid #ddd ;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+}
+textarea{
+    height: 150px;
+}
+.limpar{
+ 
+
+}
+.contato{
+    flex: 1;
+    display: flex; 
+    justify-content:end;
+    flex-direction: column;
+    align-items: flex-end;  
+    
+    background-color: brown;
+   
+ 
+    
+}
+#formulario{
+   
+    color: red;
+}
