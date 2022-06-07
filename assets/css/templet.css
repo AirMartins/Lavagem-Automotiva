@@ -60,18 +60,22 @@ nav a:hover{
     height: 670px;/*sem esta altura "falsa" não se consegue ver a imagem*/
 }
 .content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     
-   justify-content:end;
-   height: 450px;
+    justify-content:center;
+    
+    width: 600px;
+    
+   
+   
+  
    
 }
 .contato{
+    margin-top: 10px;
     display: flex;
-    flex-direction: ;
-   align-items: flex-end;
+    justify-content:flex-start;
+   
+  
 }
 .form{
     display: flex;
@@ -85,6 +89,14 @@ nav a:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16;
 }
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 270px;
+    height: 500px;
+    background-color: red;
+}
 textarea{
     height: 150px;
 }
@@ -92,19 +104,8 @@ textarea{
  
 
 }
-.contato{
-    flex: 1;
-    display: flex; 
-    justify-content:end;
-    flex-direction: column;
-    align-items: flex-end;  
-    
-    background-color: brown;
-   
- 
-    
-}
 #formulario{
-   
-    color: red;
+    color: white;
 }
+
+

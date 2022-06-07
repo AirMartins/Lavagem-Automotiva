@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+p{
+   color: #727272 /*Colocar algum peso de fonte e cor*/
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    height: 120px;
+
+}
+
+section{
+    padding: 100px;
+}
+
+.container{/*cabeçalho*/
+    display: flex;/* as duas "div" na mesma linha*/
+    justify-content: space-between; /*distribui as divs uma em cada canto da tela*/
+    width: 990px;    
+    margin-top: 10px;
+
+}
+.logomarca{
+    display: flex;
+    align-items: center; /*alinha o logotipo centralizando*/
+    margin-bottom: 7px;
+
+
+}
+.menu{
+    display: flex;
+    align-items: center;
+   
+
+}
+nav ul,
+nav li{
+    margin: 0;
+    padding: 0%;
+    list-style: none;/*retira o ponto da lista*/    
+}
+nav ul{
+    display: flex;/*lado a lado*/
+    
+}
+nav a{
+    display: block;/*espaçamento em bloco*/
+    padding: 15px;
+    text-decoration: none;/*retira sublinhado*/
+    text-transform: uppercase;/*todo texto do menu em Maiúscula*/
+    color: #727272;
+    font-family: Arial;
+}
+
+nav a:hover{
+    background-color: #39aae1;
+    color: white;
+
+}
+.banner{
+    background-image: url(../imagens/Bannercentral.jpg); /*essa imagem tem qualidade ruim*/
+    
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 450px;
+   
+}
+.contato{
+    
+    padding: 50px 35px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap: wrap;
+    /* max-width: 500px; */
+    /* margin-top: 2px; */
+   
+}
+
+.titleText{
+    margin-bottom: 10px;
+}
+
+.contato h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contatoform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.contatoform .inputBox input,
+.contatoform .inputBox textarea{
+    width: 100%;
+    border:1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contatoform .inputBox textarea{
+    min-height: 150px;
+}
+
+.contatoform .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157; /*arrumar a cor */
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: auto;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+
+.field{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1 solid #ddd ;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+}
+
+
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    text-align: center;
+}
+#formulario{
+   
+    color: red;
+}
+.contatoform{
+    display: flex;
+    flex: 1;  
+    justify-content:space-between;
+    
+   
+
+}
+figure{
+    display: flex;
+    align-items:center;
+    flex-direction: column-reverse;
+  
+    bottom: 30px;
+    right: 30px;
+    height: 15px;
+    width: 15px;
+    animation-name: pulsar;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode:none;
+    animation-play-state:running;
+    
+   
+}
+@keyframes pulsar{
+    0% {
+        height: 85px;
+        width: 85px;
+
+    }
+    100%{
+        height: 45px;
+        width: 45px;
+
+    }
+}
+a{
+    flex:1;
+    display: flex;
+    
+    
+}
+
